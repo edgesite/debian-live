@@ -20,7 +20,10 @@ update-locale LANG=en_US.UTF-8
 
 echo Install packages
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
-apt-get install -y bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less nfs-common ntfs-3g openssh-client open-vm-tools procps vim wimtools wget
+apt-get install -y bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less xfsprogs e2fsprogs btrfs-progs nfs-common ntfs-3g openssh-client open-vm-tools procps vim gnupg wget mdadm lvm2
+apt-get install -y smartmontools sg3-utils nvme-cli pciutils usbutils lshw ipmitool rsync zip unzip nano tmux screen minicom telnet mtr-tiny iperf3 netcat udpcast tcpdump ethtool net-tools arping lldpd tftpd-hpa flashrom i2c-tools
+# Mellanox
+apt-get install -y mstflint
 
 echo Clean apt post-install
 apt-get clean

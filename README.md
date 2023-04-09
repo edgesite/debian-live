@@ -2,6 +2,16 @@
 Builds a Debian 10 (Buster) Live x86-64 ISO monthly using GitHub Actions. Used primarily for backing up and restoring Linux and Windows based systems.
 
 
+## Features
+- Support Extfs/XFS/Btrfs/NTFS/FAT
+- Misc: lsusb, lspci, lwhw, curl, wget, rsync, (un)zip, tar
+- System management: ipmitool, minicom, screen, tmux, telnet, ssh, nano, vim
+- Firmware: flashrom, i2c-tools, tftpd-hpa, mstflint
+- Disk: smartmontools, sg3-utils, nvme-cli, gdisk, fdisk, mdadm, lvm
+- Network: net-tools, ping, iproute2, netcat, udpcast, lldpd, mtr, iperf3
+- Network debug: arping, tcpdump
+- Put your own tools to `tools` folder
+
 ## Default Password
 The default username and password is root / toor.
 
